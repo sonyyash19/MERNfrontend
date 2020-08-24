@@ -20,12 +20,12 @@ const Signup = () => {
     };
 
     const onSubmit = event => {
-        event.preventDefault()
-        setValues({...values, error: false})
+        event.preventDefault();
+        setValues({...values, error: false});
         signup({name, email, password})
         .then(data => {
             if(data.error){
-                setValues({...values, error: data.error, success: false})
+                setValues({...values, error: data.error, success: false});
             }
             else{
                 setValues({
@@ -65,9 +65,9 @@ const Signup = () => {
                                 <input 
                                 className="form-control" 
                                 onChange={handleChanges("password")}
-                                type="text" />
+                                type="password" />
                              </div>
-                        <button className="btn btn-success btn-block">Submit</button>
+                        <button onClick={onSubmit} className="btn btn-success btn-block">Submit</button>
                     </form>
                 </div>
             </div>

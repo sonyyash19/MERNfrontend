@@ -23,7 +23,10 @@ import Menu from './Menu';
                  <button className="btn btn-warning btn-lg">Contact Us</button>
              </div>
              <div className="container">
-                 <span className="text-muted">An amazing place to learn <span className="text-white">MERN</span> Bootcamp </span>
+                 <span className="text-muted">
+                     An amazing place to learn 
+                     <span className="text-white">MERN</span>
+                      Bootcamp </span>
              </div>
          </footer>
      </div>
